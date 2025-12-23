@@ -70,12 +70,12 @@ export default function Home() {
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight max-w-4xl leading-tight">
-            Preserving Wisdom for <br />
-            <span className="text-gradient">Future Generations</span>
+            Your Journey of Seeking <br />
+            <span className="text-gradient"> Islamic Knowledge</span>
           </h1>
 
           <p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed px-4 md:px-0">
-            Darus Almutun is a premier digital archive dedicated to preserving classical texts and manuscripts. Explore our vast collection of knowledge.
+            Inspirational classes featuring spirituality, lifestyle, mental well-being, and more that will bring the entire family closer to Allah.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center gap-4 pt-4 w-full sm:w-auto px-6">
