@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
 import { Home, Settings, UserPlus, Building2, Users, Menu, X, BookOpen, LogOut, LayoutDashboard } from "lucide-react";
@@ -75,7 +76,15 @@ export function AdminSidebar() {
                 <div className="flex h-full flex-col">
                     {/* Header */}
                     <div className="flex h-16 items-center border-b px-6">
-                        <h2 className="text-xl font-bold tracking-tight text-gradient">Darus Almutun</h2>
+                        <Link href="/">
+                            <Image
+                                src="/durus-almutun-logo.jpg"
+                                alt="Darus Almutun"
+                                width={140}
+                                height={32}
+                                className="h-8 w-auto"
+                            />
+                        </Link>
                     </div>
 
                     {/* Navigation */}

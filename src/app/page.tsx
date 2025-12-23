@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { createClient } from "@/lib/supabase/client";
 
@@ -23,9 +24,15 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
             {/* Logo - Shifted right on mobile to account for sidebar toggle */}
-            <div className="text-xl font-bold tracking-tight">
-              Darus <span className="text-primary">Almutun</span>
-            </div>
+            <Link href="/" className="flex items-center gap-2">
+              <Image
+                src="/durus-almutun-logo.jpg"
+                alt="Darus Almutun Logo"
+                width={150}
+                height={40}
+                className="h-10 w-auto"
+              />
+            </Link>
           </div>
 
           <nav className="hidden lg:flex items-center gap-8 text-sm font-medium text-muted-foreground">
@@ -64,10 +71,7 @@ export default function Home() {
       {/* Hero Section */}
       <main className="flex-1 flex flex-col items-center justify-center pt-12 pb-16">
         <section className="container mx-auto px-4 md:px-6 flex flex-col items-center justify-center text-center space-y-8 py-12 md:py-20 lg:py-32">
-          <div className="inline-flex items-center rounded-full border bg-muted px-3 py-1 text-xs md:text-sm font-medium text-primary backdrop-blur-xl animate-in fade-in slide-in-from-bottom-3 duration-1000">
-            <span className="flex h-2 w-2 rounded-full bg-primary mr-2 animate-pulse"></span>
-            Now Live: Advanced Fiqh
-          </div>
+
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight max-w-4xl leading-tight">
             Your Journey of Seeking <br />
